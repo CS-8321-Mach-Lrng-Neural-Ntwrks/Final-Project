@@ -79,40 +79,6 @@ The project uses the Google Cluster Data 2019 dataset, focusing on:
 - **merged_data_cell_a_pdu6_pdu7_approx100machines_30d.feather**: Processed dataset containing ~100 machines' worth of data over 30 days
 - **X_train.npy** and **X_val.npy**: Preprocessed numpy arrays used for model training
 
-## How to Use
-
-1. Start with the data processing script to prepare the dataset:
-   ```bash
-   python process_google_data.py
-   ```
-
-2. Train the LSTM model for time-series prediction:
-   ```bash
-   python train_lstm_model.py
-   ```
-
-3. Train the VAE model for synthetic data generation:
-   ```bash
-   python train_vae_model.py
-   ```
-
-4. For diffusion model training and analysis, explore the Jupyter notebooks:
-   - `tdiffusion_time_series.ipynb` to train and experiment with diffusion models
-   - `diff_analysis.ipynb` to evaluate and compare diffusion model outputs
-
-5. Explore the other analysis notebooks:
-   - `analysis.ipynb` for general data exploration
-   - `ai_data_center_load_modeling.ipynb` for comprehensive model comparison
-
-## Requirements
-
-The project uses:
-- PyTorch for deep learning models
-- Pandas and NumPy for data processing
-- Google Cloud BigQuery client for accessing data
-- Matplotlib for visualization
-- Scikit-learn for preprocessing
-
 ## Project Outcomes
 
 This project demonstrates:
